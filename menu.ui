@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1229</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Menu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>611</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Справочник &quot;Ученики&quot; | Хеш-таблица </string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>591</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>40</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Индекс</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ключ (ФИО)</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Значение (Класс, ДР)</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Статус</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>591</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Справочник &quot;Оценки&quot; | АВЛ-дерево</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>571</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>40</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Предмет</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Оценка</string>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>549</y>
+      <width>1211</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Отладка</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>14</y>
+       <width>1201</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1229</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Справочник &quot;Ученики&quot; ▼</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_20"/>
+    <addaction name="separator"/>
+    <addaction name="action_10"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+    <addaction name="separator"/>
+    <addaction name="action_16"/>
+    <addaction name="separator"/>
+    <addaction name="action_22"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_34"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справочник &quot;Оценки&quot; ▼</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_31"/>
+    <addaction name="separator"/>
+    <addaction name="action_28"/>
+    <addaction name="separator"/>
+    <addaction name="action_29"/>
+    <addaction name="separator"/>
+    <addaction name="action_33"/>
+    <addaction name="separator"/>
+    <addaction name="action_35"/>
+    <addaction name="separator"/>
+    <addaction name="action_39"/>
+    <addaction name="separator"/>
+    <addaction name="action_42"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Отчет ▼</string>
+    </property>
+    <addaction name="action_21"/>
+    <addaction name="separator"/>
+    <addaction name="action_12"/>
+    <addaction name="separator"/>
+    <addaction name="action_26"/>
+    <addaction name="separator"/>
+    <addaction name="action_37"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Отладка ▼</string>
+    </property>
+    <addaction name="action_23"/>
+    <addaction name="separator"/>
+    <addaction name="action_25"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>Просмотр</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>Сформировать</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>Печать хешей</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>Печать АВЛ</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>Статистика</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>&quot;Ученики&quot; и &quot;Оценки&quot;</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Отчет &quot;Оценка ученика&quot;</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Сохранить в файл</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Применить фильтр</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>Сбросить фильтр</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>Сохранить в файл</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="text">
+    <string>Применить фильр</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="text">
+    <string>Сбросить фильтр</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>Найти запись</string>
+   </property>
+  </action>
+  <action name="action_29">
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>Найти запись</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>Показать</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>Сохранить в файл</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>Считать файл</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>Начать работу со справочником</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="text">
+    <string>Показать справочник</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>Показать хеш-таблицу</string>
+   </property>
+  </action>
+  <action name="action_31">
+   <property name="text">
+    <string>Считать файл</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Показать хеш-таблицу</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="text">
+    <string>Показать справочник</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>Показать дерево</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>Показать справочник</string>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>Печать дерева фильтрации</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
